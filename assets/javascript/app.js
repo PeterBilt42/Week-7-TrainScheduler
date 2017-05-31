@@ -86,7 +86,6 @@ var getKey = '';
                "</th>" +
                "<th>" + snapshot.val().minutesTillTrain + 
                "</th>" +
-               "<th>" + "<input type='submit' value='remove train' class='remove-train btn btn-primary btn-sm'>" + "</td>" +
           "</tr>");
 // Handle the errors
 }, function(errorObject){
