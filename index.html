@@ -5,16 +5,20 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 
 <body>
-
+  <!-- jumbotron -->
   <div class="container">
     <div id="jumbotron" class="jumbotron" >
       <h1 class="text-center">Any Time is Train Time!</h1>
       <p class="text-center"><b>Choo Choo Chee Chee!</b></p>
     </div>
-      
+    <!-- first panel -->
     <div id="panel1" class="panel panel-primary"> 
       <div class="panel-heading">  
         <h3>Current Train Schedule</h3>
@@ -33,7 +37,7 @@
         </table>        
       </div>
     </div>
-
+    <!-- second panel -->
     <div id="panel2" class="panel panel-primary">
       <div class="panel-heading">
         <h3>Add Train</h3>
@@ -42,28 +46,27 @@
         <form>
           <div class="form-group">
               <label for="trainName">Train Name</label>
-              <input type="text" class="form-control" placeholder="Name">
+              <input type="text" id="name-input" class="form-control" placeholder="Name">
               
               <label for="destination">Destination</label>
-              <input type="text" class="form-control" placeholder="Destination">
+              <input type="text" id="destination-input" class="form-control" placeholder="Destination">
 
               <label for="starTime">Train Time (HH:mm)</label>
-              <input type="text" class="form-control" id="start-date" placeholder="Time (in military)"> 
+              <input type="text" id="time-input" class="form-control" id="start-date" placeholder="Time ex. 12:32"> 
               
               <label for="frequency">Frequency (min)</label>
-              <input type="text" class="form-control" placeholder="Frequency">
-              <!-- destination, frist train time (HH:mm- military time), frequency (min), Submit   -->
-              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-
+              <input type="text" id="frequency-input" class="form-control" placeholder="Frequency">
           </div>
-        </form> 
+        </form>
+              <button class="btn btn-primary" id="testButton">Submit</button>
+
       </div>
     </div>
 
 
   </div>
+  <!-- start script -->
+  <!-- dont forget firebase... lol -->
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
