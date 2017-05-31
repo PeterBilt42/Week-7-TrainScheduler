@@ -75,7 +75,7 @@ var getKey = '';
      });
      database.ref().on("child_added", function(snapshot) {
 
-		$('.table').append("<tr' id=" + "'" + snapshot.key() + "'" + ">" +
+		$('.table').append("<tr' id=" + "'" + snapshot.val() + "'" + ">" +
                "<th>" + snapshot.val().name +
                "</th>" +
                "<th>" + snapshot.val().destination +
