@@ -1,5 +1,5 @@
 #jumbotron {
-	background-color: #996633;
+	background-color: #66b3ff;
 	color: white;
 }
 #submit{
@@ -11,4 +11,25 @@ th{
 }
 label{
 	font-size: 150%;
+}
+#testButton{
+	font-size: 150%;
+}
+#name-input{
+	font-size: 150%;
+}
+#destination-input{
+	font-size: 150%;
+}
+#time-input{
+	font-size: 150%;
+}
+#frequency-input{
+	font-size: 150%;
+}
+#panel-1{
+	font-size: 220%;
+}
+#panel-2{
+	font-size: 220%;
 }
